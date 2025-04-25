@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>잡동사니 모음집</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <!-- 첫 화면(리스트 메뉴) -->
+    <div class="GameListBox animate__animated">
+      <h1>잡동사니 보관소</h1>
+      <div class="GameList">
+        <a href="#" data-page="map01.html">2025 야구 랜덤 디펜스 1.42</a>
+        <a href="#" data-page="map02.html">[RPG] Asteria 1.3fix</a>
+        <a href="#" data-page="map03.html">Crescendo</a>
+        <a href="#" data-page="map04.html">대침공에서 살아남기</a>
+      </div>
+    </div>
+
+
+    <!-- 사이드바 + 컨텐츠 영역 -->
+  <div class="appWrapper" style="display: none;">
+    <!-- 사이드바 -->
+    <div class="sidebar">
+      <div class="profile">
+        <div class="profilepic"><img src="img/pf001.jpg"></div>
+        <div class="info">
+          <div>프레이아데스</div>
+          <div>잡동사니 저장소</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <p class="nav_page">목록</p>
+        <a href="#" data-page="map01.html">📃 2025 야구 랜덤 디펜스 1.42</a>
+        <a href="#" data-page="map02.html">📃 [RPG] Asteria 1.3fix</a>
+        <a href="#" data-page="map03.html">📃 Crescendo</a>
+        <a href="#" data-page="map04.html">📃 대침공에서 살아남기</a>
+
+        <a href="#" id="backToMenu">↩ 메인화면</a>
+      </nav>
+    </div>
+
+    <!-- 각 컨텐츠 -->
+    <div class="content animate__animated"></div>
+  </body>
+</html>
