@@ -32,7 +32,7 @@ $(function () {
     } else {
       // 홈으로 돌아가기
       $(".appWrapper").fadeOut(function () {
-        $(".GameListBox").show().removeClass().addClass("GameList animate__animated animate__fadeIn");
+        $(".GameListBox").show().removeClass("animate__fadeOutDown").addClass("GameList animate__animated animate__fadeIn");
       });
     }
   });
