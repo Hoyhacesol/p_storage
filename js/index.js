@@ -28,12 +28,20 @@ $(function () {
     const page = $(this).data("page");
 
     if (page) {
-      loadPage(page);
+      $(".content").fadeOut(300, function () {
+        loadPage(page);
+      });
     } else {
       // 홈으로 돌아가기
       $(".appWrapper").fadeOut(function () {
         $(".GameListBox").show().removeClass("animate__fadeOutDown").addClass("GameList animate__animated animate__fadeIn");
       });
     }
+  });
+
+  // 아스테리아1.6.3 다운
+  $(document).on("click", ".map02download", function (e) {
+    e.preventDefault();
+    window.open("https://drive.google.com/uc?export=download&id=1UrtzA8k0ai4iiJiyWN8G_rjbb-7TJ2f-", "_blank");
   });
 });
