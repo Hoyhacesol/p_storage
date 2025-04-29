@@ -209,7 +209,8 @@ body {
 }
 
 /* 이미지설정 */
-.content img {
+.content img,
+.content video {
   max-width: 90%;
   min-width: 30%;
 }
