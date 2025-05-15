@@ -39,6 +39,25 @@ $(function () {
     }
   });
 
+  // 모바일 사이드바 토글
+  $("#sidebarToggle").on("click", function () {
+    $(".sidebar").addClass("show");
+    $(".overlay").addClass("show");
+  });
+
+  $(".overlay").on("click", function () {
+    $(".sidebar").removeClass("show");
+    $(".overlay").removeClass("show");
+  });
+
+  // 리스트 클릭 시에도 사이드바 닫기 (모바일)
+  $(".nav a[data-page]").on("click", function () {
+    if (window.innerWidth <= 469) {
+      $(".sidebar").removeClass("show");
+      $(".overlay").removeClass("show");
+    }
+  });
+
   // 아스테리아1.6.3 다운
   $(document).on("click", ".map02download", function (e) {
     e.preventDefault();
