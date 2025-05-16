@@ -250,9 +250,11 @@ body {
 
 /* 이미지설정 */
 .content img,
-.content video {
+.content video,
+iframe {
   max-width: 90%;
   min-width: 30%;
+  height: auto;
 }
 
 /* 선전문구 */
