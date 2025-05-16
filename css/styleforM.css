@@ -104,11 +104,11 @@ body {
   top: 15px;
   left: 15px;
   font-size: 24px;
-  background: black;
+  background: rgba(0, 0, 0, 0);
   color: white;
   padding: 8px 12px;
   border-radius: 5px;
-  z-index: 1000;
+  z-index: 900;
   cursor: pointer;
   display: block;
 }
@@ -123,6 +123,7 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   z-index: 998;
+  transition: 0.6s ease;
 }
 .overlay.show {
   display: block;
@@ -194,15 +195,15 @@ body {
 
 /* 컨텐츠(ajax 조각) */
 .content {
-  padding-left: 250px;
-  width: 75%;
+  /* padding-left: 250px; */
+  width: 100vh;
   display: none;
-  margin: 15vh auto;
+  margin: 5vh auto;
 }
 
 .contentcontainer {
   width: 100%;
-  min-width: 500px;
+  min-width: 300px;
   max-width: 1800px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
@@ -212,11 +213,11 @@ body {
 /* 제목 & 소제목 */
 .content-title {
   color: rgb(238, 255, 255);
-  font-size: 2rem;
+  font-size: 1.35rem;
 }
 .content-subtitle {
   color: rgb(30, 214, 107);
-  font-size: 1.65rem;
+  font-size: 1.35rem;
   font-family: "IM";
   margin: 15px 5px;
 }
@@ -224,16 +225,16 @@ body {
 /* 맵 다운로드 버튼 */
 .contentcontainer .map01download,
 .contentcontainer .map02download {
-  margin: 3px 0px 0px 35px;
+  margin: 3px 0px 0px 12px;
   text-align: center;
-  width: 115px;
-  height: 35px;
+  width: 6rem;
+  height: 30px;
   background-color: #05c5ff;
   border-radius: 5px;
   color: rgb(0, 0, 0);
-  padding: 4px 6px;
+  padding: 4px 3px;
   font-family: "SquareacB";
-  font-size: 1.25rem;
+  font-size: 1rem;
   transition: 250ms;
 }
 .contentcontainer .map01download:hover,
@@ -260,8 +261,8 @@ body {
   padding: 3px 10px;
   background-color: #f81a89;
   color: azure;
-  margin: 5px 0px 40px 0px;
-  font-size: 1.35rem;
+  margin: 5px 0px 20px 0px;
+  font-size: 1rem;
   font-family: "SquareacB";
   border-radius: 9px;
 }
